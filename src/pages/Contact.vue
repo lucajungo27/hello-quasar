@@ -1,7 +1,9 @@
 <template>
   <q-page >
 <h1>Page de contact</h1>
-
+    <div>
+      <p>Je suis {{nom}} et dans 10 ans j'aurais {{age + 10}} ans</p>
+    </div>
     <img
       alt="Quasar logo"
       src="~assets/quasar-logo-full.svg"
@@ -14,6 +16,7 @@ export default {
   name: 'PageContact',
   data () {
     return {
+      nom: 'Pedro',
       age: 33
     }
   }
